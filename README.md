@@ -12,7 +12,7 @@ Mais il existe d'autres logiciels, dont l'un des plus connus est SiDiary. Il rec
 Étant utilisateur de MacOs et de Linux, cette situation ne me convenait pas.  
   
 J'ai donc branché le lecteur sous Linux. Il a été immédiatement reconnu.  
-Le module XXX a été chargé, et le device /dev/ttyUSB0 a été créé.  
+Les modules usbserial et cp210x ont été chargés, et le device /dev/ttyUSB0 a été créé.  
 Sous Mac, rien. Aucune réaction.  
   
 J'ai vu que le dispositif USB était un convertisseur USB-UART, comme sous Windows.  
@@ -25,8 +25,9 @@ J'ai donc gentiment demandé à Silicon Labs de faire le même ajout que moi sur
 Miracle, ils ont accepté.  
 Le driver disponible depuis reconnait le câble qui porte le nom de `Zero-Click`.  
 Le firmware est conçu par Agamatrix.  
+Sous Mac, le device /dev/cu.SLAB_USBtoUART est créé.  
   
-Pour ceux que ça intéresserait, j'ai décrit le protocol ici.  
+Pour ceux que ça intéresserait, j'ai décrit le protocol [ici](https://github.com/nbenm/glucometer-protocols/blob/master/sanofi/bgstar-mystar.md)  
   
 Le programme est un script Python unique.  
   
@@ -43,6 +44,10 @@ xxstar.py [-d] [-s] [-u] [-a] [-h]
   
 -d et -s sont exclusifs l'un de l'autre  
 ```
+Pour les modes `update` et `simulation`, seules les mesures récuérées depuis la dernière fois sont récuérées.  
+Avec le mode `update`, le fichier `xxstar.last`est modifié. La date du dernier résultat récupéré y est stockée.  
+Elle servira de référence pour la prochaine utilisation des modes `similation`ou `update`.  
+
 Je ne me souviens plus s'il y a des choses à installer au préalable, mais il ne me semble pas.  
   
 En cas de problème ou de question, ne pas hésiter à ouvrir une `issue`.  
