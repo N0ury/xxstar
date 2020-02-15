@@ -19,12 +19,12 @@ J'ai vu que le dispositif USB était un convertisseur USB-UART, comme sous Windo
 De plus le composant utilisé fonctionne avec un driver CP210x de Silicon Labs.  
   
 Donc pour Linux, il a fallu faire un travail de reverse engineering.  
-Le câble de liaison pour relier le lecteur à un ordinateur, n'est pas un simple cable. C'est là que se trouve l'adaptateur USB-UART. J'ai donc récupéré le vendor id et le product id, puis l'ai ajouté au driver pour Mac de Silicon Labs.  
-Il a fonctionné Mais le driver n'était plus signé.  
+Le câble de liaison pour relier le lecteur à un ordinateur n'est pas un simple cable. C'est là que se trouve l'adaptateur USB-UART. J'ai donc récupéré le vendor id et le product id, puis l'ai ajouté au driver pour Mac de Silicon Labs.  
+Il a fonctionné, mais le driver n'était plus signé.  
 J'ai donc gentiment demandé à Silicon Labs de faire le même ajout que moi sur leur driver.  
 Miracle, ils ont accepté.  
-Le driver disponible depuis, reconnait le cable qui porte le nom de `Zero-Click`.  
-Le firmware est concu par Agamatrix.  
+Le driver disponible depuis reconnait le câble qui porte le nom de `Zero-Click`.  
+Le firmware est conçu par Agamatrix.  
   
 Pour ceux que ça intéresserait, j'ai décrit le protocol ici.  
   
