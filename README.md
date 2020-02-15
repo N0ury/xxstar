@@ -27,7 +27,7 @@ Le driver disponible depuis reconnait le câble qui porte le nom de `Zero-Click`
 Le firmware est conçu par Agamatrix.  
 Sous Mac, le device /dev/cu.SLAB_USBtoUART est créé.  
   
-Pour ceux que ça intéresserait, j'ai décrit le protocol [ici](https://github.com/nbenm/glucometer-protocols/blob/master/sanofi/bgstar-mystar.md)  
+Pour ceux que ça intéresserait, j'ai décrit le protocol [ici](https://github.com/glucometers-tech/glucometer-protocols/blob/master/sanofi/bgstar-mystar.md)  
   
 Le programme est un script Python unique.  
   
