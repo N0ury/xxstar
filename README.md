@@ -7,7 +7,7 @@ Je n'en suis plus tout à fait persuadé aujourd'hui.
   
 Le problème était que ces deux appareils sont utilisables avec des logiciels sous Windows seulement.  
 Le logiciel de Sanofi lui n'est même pas utilisable sous Windows 10.  
-Mais il existe d'autres logiciels, dont l'un des plus connus est SiDiary. Il reconnait un très grand nombre de lecteurs.    
+Mais il existe d'autres logiciels, dont les plus connus sont SiDiary et DIABASS. Il reconnaissent un très grand nombre de lecteurs.    
   
 Étant utilisateur de MacOs et de Linux, cette situation ne me convenait pas.  
   
