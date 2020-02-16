@@ -158,7 +158,7 @@ for dt in sorted(d.keys()):
     # print req and response
     print ('\n' + d[dt][2].decode('utf-8'))
     print (d[dt][3].decode('utf-8'))
-  print (dt, d[dt][0], d[dt][1])
+  print (dt, d[dt][0], d[dt][1], '\"\"')
 
 if update and updlast:
   f = open("xxstar.last","w")
